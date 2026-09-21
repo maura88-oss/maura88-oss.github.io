@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MAURA · 黑红之域</title>
+<style>
+  :root {
+    --black: #0a0a0a;
+    --blood: #a01616;
+    --blood-light: #e02929;
+    --ash: #cfc6c6;
+    --ash-dim: #7d7373;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { height: 100%; }
+  body {
+    font-family: Georgia, "Times New Roman", "Songti SC", serif;
+    background:
+      radial-gradient(ellipse 80% 60% at 50% -10%, #1c0a0a 0%, rgba(10,10,10,0) 70%),
+      radial-gradient(ellipse 50% 40% at 85% 110%, #140707 0%, rgba(10,10,10,0) 60%),
+      var(--black);
+    color: var(--ash);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    overflow-x: hidden;
+  }
+  .cross {
+    font-size: 20px;
+    color: var(--blood);
+    letter-spacing: 18px;
+    margin-bottom: 34px;
+    opacity: .9;
+  }
+  .title {
+    font-size: clamp(56px, 12vw, 128px);
+    font-weight: normal;
+    letter-spacing: .28em;
+    text-indent: .28em;
+    color: #f2ecec;
+    text-shadow: 0 0 22px rgba(160,22,22,.55), 0 0 60px rgba(160,22,22,.25);
+    line-height: 1;
+  }
+  .title span {
+    color: var(--blood-light);
+  }
+  .subtitle {
+    margin-top: 26px;
+    font-size: 15px;
+    letter-spacing: .55em;
+    text-indent: .55em;
+    color: var(--ash-dim);
+  }
+  .divider {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin: 44px 0 42px;
+    color: var(--blood);
+    font-size: 13px;
+  }
+  .divider::before, .divider::after {
+    content: "";
+    width: 110px;
+    height: 1px;
+    background: linear-gradient(to right, transparent, var(--blood));
+  }
+  .divider::after {
+    background: linear-gradient(to left, transparent, var(--blood));
+  }
+  nav {
+    display: flex;
+    gap: 46px;
+  }
+  nav a {
+    color: var(--ash-dim);
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: .35em;
+    text-indent: .35em;
+    padding: 10px 0;
+    border-bottom: 1px solid transparent;
+    transition: color .3s, border-color .3s, text-shadow .3s;
+  }
+  nav a:hover {
+    color: var(--blood-light);
+    border-bottom-color: var(--blood);
+    text-shadow: 0 0 12px rgba(224,41,41,.6);
+  }
+  .enter {
+    margin-top: 60px;
+  }
+  .enter a {
+    display: inline-block;
+    padding: 14px 52px;
+    border: 1px solid var(--blood);
+    color: var(--blood-light);
+    text-decoration: none;
+    font-size: 13px;
+    letter-spacing: .5em;
+    text-indent: .5em;
+    transition: all .35s;
+  }
+  .enter a:hover {
+    background: var(--blood);
+    color: #fff;
+    box-shadow: 0 0 26px rgba(160,22,22,.55);
+  }
+  footer {
+    position: absolute;
+    bottom: 26px;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    letter-spacing: .2em;
+    color: #4d4545;
+  }
+</style>
+</head>
+<body>
+  <div class="cross">✠ ✠ ✠</div>
+  <h1 class="title">MAU<span>RA</span></h1>
+  <p class="subtitle">用 文 字 · 剖 析 世 界</p>
+  <div class="divider">✠</div>
+  <nav>
+    <a href="/">首页</a>
+    <a href="/blog.html">文章</a>
+    <a href="/about.html">关于</a>
+  </nav>
+  <div class="enter">
+    <a href="/blog.html">进 入 博 客</a>
+  </div>
+  <footer>© 2026 MAURA · 黑红即信仰</footer>
+</body>
+</html>

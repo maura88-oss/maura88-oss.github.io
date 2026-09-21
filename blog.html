@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>文章 · MAURA</title>
+<style>
+  :root { --black:#0a0a0a; --blood:#a01616; --blood-light:#e02929; --ash:#cfc6c6; --ash-dim:#7d7373; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    font-family: Georgia, "Times New Roman", "Songti SC", serif;
+    background: radial-gradient(ellipse 80% 50% at 50% -10%, #1c0a0a 0%, rgba(10,10,10,0) 70%), var(--black);
+    color: var(--ash);
+    min-height: 100vh;
+    padding: 70px 24px 100px;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; }
+  .top {
+    display: flex; align-items: baseline; justify-content: space-between;
+    border-bottom: 1px solid rgba(160,22,22,.5);
+    padding-bottom: 18px;
+    margin-bottom: 52px;
+  }
+  .top h1 {
+    font-size: 30px; font-weight: normal; letter-spacing: .3em; color: #f2ecec;
+    text-shadow: 0 0 16px rgba(160,22,22,.5);
+  }
+  .top h1 span { color: var(--blood-light); }
+  .top a { color: var(--ash-dim); text-decoration: none; font-size: 13px; letter-spacing: .2em; transition: color .3s; }
+  .top a:hover { color: var(--blood-light); }
+  .empty {
+    text-align: center; padding: 90px 0; color: var(--ash-dim); letter-spacing: .25em;
+  }
+  .empty .sigil { font-size: 34px; color: var(--blood); margin-bottom: 28px; }
+  footer {
+    text-align: center; margin-top: 80px; font-size: 12px; letter-spacing: .2em; color: #4d4545;
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top">
+      <h1>文<span>章</span></h1>
+      <a href="/">← 返回首页</a>
+    </div>
+    <div class="empty">
+      <div class="sigil">✠</div>
+      <p>墨 迹 未 干 · 静 待 首 篇</p>
+      <p style="margin-top:14px; font-size:12px; letter-spacing:.15em;">文章将在此处陈列</p>
+    </div>
+    <footer>© 2026 MAURA</footer>
+  </div>
+</body>
+</html>
