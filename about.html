@@ -12,14 +12,15 @@
     background: radial-gradient(ellipse 80% 50% at 50% -10%, #1c0a0a 0%, rgba(10,10,10,0) 70%), var(--black);
     color: var(--ash);
     min-height: 100vh;
-    padding: 70px 24px 100px;
+    padding: 64px 24px 100px;
   }
   .wrap { max-width: 700px; margin: 0 auto; }
+  .moon { display:block; margin: 0 auto 26px; filter: drop-shadow(0 0 8px rgba(224,41,41,.4)); }
   .top {
     display: flex; align-items: baseline; justify-content: space-between;
     border-bottom: 1px solid rgba(160,22,22,.5);
     padding-bottom: 18px;
-    margin-bottom: 48px;
+    margin-bottom: 44px;
   }
   .top h1 {
     font-size: 30px; font-weight: normal; letter-spacing: .3em; color: #f2ecec;
@@ -31,14 +32,15 @@
   .sigil { text-align: center; font-size: 40px; color: var(--blood); margin-bottom: 36px; }
   .bio { text-align: center; letter-spacing: .12em; line-height: 2.1; color: var(--ash); }
   .bio .name { font-size: 20px; color: #f2ecec; letter-spacing: .35em; text-indent: .35em; margin-bottom: 18px; }
-  .divider { display:flex; align-items:center; gap:14px; margin: 44px 0; color: var(--blood); font-size: 12px; }
-  .divider::before, .divider::after { content:""; flex:1; height:1px; background: linear-gradient(to right, transparent, var(--blood)); }
-  .divider::after { background: linear-gradient(to left, transparent, var(--blood)); }
-  footer { text-align: center; margin-top: 70px; font-size: 12px; letter-spacing: .2em; color: #4d4545; }
+  .snake { display:block; margin: 44px auto; filter: drop-shadow(0 0 6px rgba(160,22,22,.5)); }
+  footer { text-align: center; margin-top: 60px; font-size: 12px; letter-spacing: .2em; color: #4d4545; }
 </style>
 </head>
 <body>
   <div class="wrap">
+    <svg class="moon" width="44" height="44" viewBox="0 0 64 64" fill="none">
+      <path d="M 42 6 A 28 28 0 1 0 42 58 A 23 23 0 1 1 42 6 Z" stroke="#e02929" stroke-width="2.2" opacity="0.9"/>
+    </svg>
     <div class="top">
       <h1>关<span>于</span></h1>
       <a href="/">← 返回首页</a>
@@ -49,7 +51,10 @@
       <p>此处是自我介绍。</p>
       <p>想写什么，告诉我，我帮你填上。</p>
     </div>
-    <div class="divider">✠</div>
+    <svg class="snake" width="220" height="30" viewBox="0 0 300 40" fill="none">
+      <path d="M 16 20 C 36 6, 56 34, 76 20 C 96 6, 116 34, 136 20 C 156 6, 176 34, 196 20 C 216 6, 236 34, 252 20 L 266 13" stroke="#a01616" stroke-width="3.4" stroke-linecap="round" opacity="0.8"/>
+      <path d="M 268 7 L 288 3 L 285 17 L 268 17 Z" fill="#e02929" opacity="0.8"/>
+    </svg>
     <footer>© 2026 MAURA</footer>
   </div>
 </body>
